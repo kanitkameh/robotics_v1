@@ -40,8 +40,23 @@ void CollectorGuiExternalBridge::publishToggleHelpPage() const {
 }
 
 void CollectorGuiExternalBridge::publishRobotAct(MoveType moveType) const {
-    auto message = RobotMoveType();
-    message.move_type = (uint)moveType;
+    RobotMoveType message;
+    switch(moveType){
+        case MoveType::FORWARD:
+            message.move_type = message.FORWARD;
+            break;
+        case MoveType::ROTATE_LEFT:
+            message.move_type = message.ROTATE_LEFT;
+            break;
+        case MoveType::ROTATE_RIGHT:
+            message.move_type = message.ROTATE_RIGHT;
+            break;
+        case MoveType::UNKNOWN:
+            LOG("UNKNOWN move type");
+            return;
+            break;
+    }
+    LOG("Message with move type %d emmitted", message.move_type);
     _toggleMoveTypePublisher->publish(message);
 }
 

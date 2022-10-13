@@ -148,6 +148,7 @@ void CollectorControllerExternalBridge::onMoveMsg(
     LOGERR("Error, received unsupported MoveType: %d", getEnumValue(moveType));
     return;
   }
+  LOG("received MoveType: %d", getEnumValue(moveType));
 
   bool success = true;
   const auto f = [this, &success, moveType]() {

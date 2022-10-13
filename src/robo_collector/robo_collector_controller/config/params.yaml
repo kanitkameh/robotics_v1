@@ -19,4 +19,4 @@
     use_local_controller_mode: True
     user: kanitkameh
     repository: https://github.com/kanitkameh/robotics_v1
-    commit_sha: not_set
+    commit_sha: 5935bc57542f5297f6b7d869d1d4b89a5097a54b
