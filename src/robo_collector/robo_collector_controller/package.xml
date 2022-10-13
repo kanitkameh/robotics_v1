@@ -4,7 +4,7 @@
   <name>robo_collector_controller</name>
   <version>1.0.0</version>
   <description>robo_collector_controller app</description>
-  <maintainer email="zhivkopetrov90@gmail.com">Zhivko Petrov</maintainer>
+  <maintainer email="kanitkameh@gmail.com">Kamen Vakavchiev</maintainer>
   <license>MIT</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>

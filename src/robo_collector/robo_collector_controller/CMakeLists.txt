@@ -17,6 +17,10 @@ find_package(robo_collector_interfaces REQUIRED)
 find_package(robo_collector_common REQUIRED)
 find_package(ros2_game_engine REQUIRED)
 
+# Kamen Vakavchiev
+# Export the commands for use in ycm(vim plugin)
+set( CMAKE_EXPORT_COMPILE_COMMANDS ON )
+
 set(_INC_FOLDER_NAME include)
 set(_RESOURCE_FOLDER_NAME resources)
 set(_INC_DIR ${CMAKE_CURRENT_SOURCE_DIR}/${_INC_FOLDER_NAME}/${PROJECT_NAME})
